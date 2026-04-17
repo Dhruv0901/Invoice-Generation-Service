@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "future-sales-forecast-mcp"
+version = "0.1.0"
+description = "MCP-style forecasting and invoice generation service scaffold"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.5",
+]
+
+[tool.setuptools]
+packages = ["mcp_server"]

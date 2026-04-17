@@ -1,0 +1,30 @@
+{
+  "request_id": "fcst_001",
+  "target_month": "2026-05-01",
+  "product_id": "SKU-10045",
+  "product_context": {
+    "product_name": "Wireless Mouse",
+    "category": "Accessories",
+    "base_price": 29.99,
+    "trend_strength": 0.08,
+    "seasonality_strength": 0.21
+  },
+  "history": {
+    "monthly_sales_lag_1": 420,
+    "monthly_sales_lag_2": 390,
+    "monthly_sales_lag_3": 405,
+    "monthly_sales_lag_4": 376,
+    "monthly_sales_lag_5": 398,
+    "monthly_sales_lag_6": 365
+  },
+  "current_context": {
+    "average_price": 28.5,
+    "inventory_units": 600,
+    "promo_intensity": 0.2,
+    "supplier_delay_flag": 0,
+    "promo_day_count": 5,
+    "promo_event_count": 1
+  },
+  "tax_rate": 0.1
+}
+

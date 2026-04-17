@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ForecastResponse",
+  "type": "object",
+  "required": ["request_id", "predicted_monthly_sales", "target_variable", "model_trace"],
+  "properties": {
+    "request_id": { "type": "string" },
+    "predicted_monthly_sales": { "type": "number" },
+    "target_variable": { "type": "string" },
+    "model_trace": { "type": "object" }
+  }
+}
+

@@ -1,0 +1,2 @@
+promo_id,start_date,end_date,discount_pct,target_type,target_value
+P1,2025-06-01,2025-06-07,15,sku,SKU-1

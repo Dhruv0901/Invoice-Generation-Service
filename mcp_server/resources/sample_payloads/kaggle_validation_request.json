@@ -1,0 +1,36 @@
+{
+  "request_id": "kaggle_val_001",
+  "target_month": "2025-11-01",
+  "product_id": "SKU-2048",
+  "product_context": {
+    "product_name": "Wireless Earbuds",
+    "category": "Electronics",
+    "base_price": 79.99,
+    "trend_strength": 0.12,
+    "seasonality_strength": 0.27
+  },
+  "history": {
+    "monthly_sales_lag_1": 312,
+    "monthly_sales_lag_2": 298,
+    "monthly_sales_lag_3": 287,
+    "monthly_sales_lag_4": 305,
+    "monthly_sales_lag_5": 276,
+    "monthly_sales_lag_6": 263
+  },
+  "current_context": {
+    "average_price": 76.49,
+    "inventory_units": 540,
+    "promo_intensity": 0.18,
+    "supplier_delay_flag": 0,
+    "promo_day_count": 4,
+    "promo_event_count": 1,
+    "active_days": 30
+  },
+  "tax_rate": 0.1,
+  "provenance": {
+    "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+    "purpose": "invoice_generation_validation",
+    "note": "This payload is schema-aligned to the Kaggle dataset and the repo's feature engineering contract, intended for invoice generation rather than metric validation."
+  }
+}
+

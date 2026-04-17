@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+.secrets/
+config/kaggle_credentials.json
+config/qwen_config.json
+
+artifacts/
+forecast_core/data/raw/kaggle-synthetic-retail/
+forecast_core/data/raw/*.zip
