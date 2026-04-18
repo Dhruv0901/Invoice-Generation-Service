@@ -145,29 +145,3 @@ The strongest next steps are:
 - add request queueing, retries, and better MCP-facing observability around latency, failures, and artifact generation
 
 * * *
-
-## Run
-
-Install dependencies:
-
-```powershell
-.\.venv\Scripts\python -m pip install -r requirements.txt
-```
-
-Run a health check:
-
-```powershell
-.\.venv\Scripts\python -m mcp_server.server health_check
-```
-
-Generate a forecast-backed invoice from the sample payload:
-
-```powershell
-.\.venv\Scripts\python -m mcp_server.server forecast_and_generate_invoice --input mcp_server\resources\sample_payloads\forecast_request.json
-```
-
-Recompute operational metrics:
-
-```powershell
-.\.venv\Scripts\python scripts\benchmark_mcp_server.py
-```
