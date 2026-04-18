@@ -29,11 +29,7 @@ Metric | Value
 `health_check` p95 latency | `0.79 ms`
 `forecast_sales` success rate | `100%` over 5 runs
 `forecast_sales` p95 latency | `25.38 ms`
-`forecast_and_generate_invoice` success rate | `100%` over 1 run
 Invoice generation latency | `55.03 s` p50/p95 on the current local Ollama setup
-Invoice artifact write rate | `100%`
-Invoice metadata write rate | `100%`
-Audit log appends during benchmark | `7` new entries
 
 These metrics matter more for this repo than classic offline forecast metrics because this repo is acting as a tool-serving layer. The main question here is not only whether the forecast is numerically reasonable, but whether the tool can respond reliably, write artifacts safely, and stay usable when a client calls it through MCP.
 
