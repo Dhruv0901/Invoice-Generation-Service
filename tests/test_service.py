@@ -2,12 +2,15 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import unittest
+from types import SimpleNamespace
 from pathlib import Path
 from unittest.mock import patch
 
 from mcp_server.services.feature_builder import build_features
 from mcp_server.services.model_loader import load_model_bundle
+from mcp_server.services.qwen_invoice_renderer import _load_qwen_config, _qwen_invoice_lines
 from mcp_server.tools.forecast import forecast_sales
 from mcp_server.tools.invoice import generate_invoice_docx, generate_invoices_from_kaggle_sample
 
@@ -35,12 +38,122 @@ class ServiceTests(unittest.TestCase):
         self.assertGreaterEqual(result["predicted_monthly_sales"], 0.0)
         self.assertEqual(result["request_id"], "fcst_001")
 
-    def test_invoice_generation_writes_docx_and_metadata(self) -> None:
+    @patch("mcp_server.tools.forecast.load_model_bundle")
+    def test_forecast_sales_falls_back_on_feature_mismatch(self, mock_load_bundle) -> None:
+        class FailingModel:
+            def predict(self, rows):
+                raise ValueError("X has 68 features, but StandardScaler is expecting 48 features as input.")
+
+        mock_load_bundle.return_value = SimpleNamespace(
+            model=FailingModel(),
+            manifest=self.bundle.manifest,
+            heuristic_fallback=False,
+        )
+
+        result = forecast_sales(self.request, base_dir=ROOT)
+
+        self.assertGreaterEqual(result["predicted_monthly_sales"], 0.0)
+        self.assertTrue(result["model_trace"]["heuristic_model"])
+        self.assertIn("68 features", result["model_trace"]["fallback_reason"])
+
+    @patch("mcp_server.services.qwen_invoice_renderer.urlopen")
+    def test_invoice_generation_writes_docx_and_metadata(self, mock_urlopen) -> None:
+        class SuccessResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def read(self) -> bytes:
+                return json.dumps(
+                    {
+                        "choices": [
+                            {
+                                "message": {
+                                    "content": json.dumps({"lines": ["Invoice", "Line 1"]})
+                                }
+                            }
+                        ]
+                    }
+                ).encode("utf-8")
+
+        mock_urlopen.return_value = SuccessResponse()
         result = generate_invoice_docx(self.request, base_dir=ROOT)
         artifact = Path(result["artifact_path"])
         metadata = Path(result["metadata_path"])
         self.assertTrue(artifact.exists())
         self.assertTrue(metadata.exists())
+
+    def test_load_qwen_config_maps_hf_model_alias(self) -> None:
+        temp_root = ROOT / "tests" / "_tmp_qwen_config"
+        config_dir = temp_root / "config"
+        config_dir.mkdir(parents=True, exist_ok=True)
+        (config_dir / "qwen_config.json").write_text(
+            json.dumps(
+                {
+                    "base_url": "https://router.huggingface.co/v1",
+                    "api_key": "test-key",
+                    "model": "qwen2.5:7b",
+                }
+            ),
+            encoding="utf-8",
+        )
+        self.addCleanup(lambda: shutil.rmtree(temp_root, ignore_errors=True))
+        config = _load_qwen_config(temp_root)
+        self.assertEqual(config["base_url"], "https://router.huggingface.co/v1")
+        self.assertEqual(config["model"], "Qwen/Qwen2.5-7B-Instruct")
+
+    @patch("mcp_server.services.qwen_invoice_renderer.urlopen")
+    def test_qwen_invoice_lines_requests_json_mode(self, mock_urlopen) -> None:
+        class SuccessResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def read(self) -> bytes:
+                return json.dumps(
+                    {
+                        "choices": [
+                            {
+                                "message": {
+                                    "content": json.dumps({"lines": ["Invoice", "Line 1"]})
+                                }
+                            }
+                        ]
+                    }
+                ).encode("utf-8")
+
+        mock_urlopen.return_value = SuccessResponse()
+        config = {
+            "base_url": "https://example.com/v1",
+            "api_key": "test-key",
+            "model": "Qwen/Qwen2.5-7B-Instruct",
+        }
+
+        lines = _qwen_invoice_lines(
+            {
+                "invoice_number": "INV-1",
+                "request_id": "REQ-1",
+                "target_month": "2025-11-01",
+                "product_id": "SKU-1",
+                "product_name": "Alpha",
+                "category": "Audio",
+                "billed_quantity": 10,
+                "unit_price": 9.99,
+                "line_total": 99.9,
+                "subtotal": 99.9,
+                "tax": 10.0,
+                "grand_total": 109.9,
+            },
+            config,
+        )
+
+        self.assertEqual(lines, ["Invoice", "Line 1"])
+        request = mock_urlopen.call_args.args[0]
+        self.assertIn('"response_format"', request.data.decode("utf-8"))
 
     @patch("mcp_server.tools.invoice.generate_invoice_docx")
     @patch("mcp_server.tools.invoice.build_invoice_requests")

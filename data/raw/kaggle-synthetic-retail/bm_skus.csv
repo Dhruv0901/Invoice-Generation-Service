@@ -1,0 +1,201 @@
+sku_id,sku_name,category,subcategory,unit_price,cost_price,brand
+1001,Electronics_Chargers_1001,Electronics,Chargers,164.56,103.44,Budget
+1002,Dairy_Cream_1002,Dairy,Cream,13.73,8.96,Local
+1003,Household_Cleaning Supplies_1003,Household,Cleaning Supplies,12.0,7.47,BlueMart
+1004,Beverages_Juices_1004,Beverages,Juices,24.82,17.58,International
+1005,Household_Paper Products_1005,Household,Paper Products,17.7,13.68,Budget
+1006,Beverages_Coffee_1006,Beverages,Coffee,12.62,9.8,Premium
+1007,Personal Care_Shampoo_1007,Personal Care,Shampoo,67.26,51.47,BlueMart
+1008,Personal Care_Shampoo_1008,Personal Care,Shampoo,43.94,31.77,Premium
+1009,Electronics_Batteries_1009,Electronics,Batteries,90.95,61.82,Local
+1010,Grocery_Rice_1010,Grocery,Rice,16.43,10.05,Budget
+1011,Personal Care_Shampoo_1011,Personal Care,Shampoo,20.37,16.28,Premium
+1012,Beverages_Juices_1012,Beverages,Juices,14.1,7.87,Premium
+1013,Grocery_Cereals_1013,Grocery,Cereals,35.63,24.33,Premium
+1014,Dairy_Butter_1014,Dairy,Butter,7.83,5.03,Premium
+1015,Dairy_Cream_1015,Dairy,Cream,27.13,19.22,Budget
+1016,Grocery_Rice_1016,Grocery,Rice,19.44,11.6,BlueMart
+1017,Household_Paper Products_1017,Household,Paper Products,43.23,23.96,Budget
+1018,Personal Care_Deodorant_1018,Personal Care,Deodorant,55.16,32.74,Budget
+1019,Electronics_Cables_1019,Electronics,Cables,211.86,152.31,Local
+1020,Beverages_Juices_1020,Beverages,Juices,9.96,7.12,Local
+1021,Grocery_Canned Goods_1021,Grocery,Canned Goods,28.83,17.6,BlueMart
+1022,Household_Cleaning Supplies_1022,Household,Cleaning Supplies,54.82,38.83,Premium
+1023,Personal Care_Toothpaste_1023,Personal Care,Toothpaste,60.82,47.09,International
+1024,Grocery_Canned Goods_1024,Grocery,Canned Goods,8.79,5.19,International
+1025,Household_Detergent_1025,Household,Detergent,8.48,4.88,Budget
+1026,Snacks_Biscuits_1026,Snacks,Biscuits,5.7,3.92,Budget
+1027,Snacks_Chips_1027,Snacks,Chips,6.05,3.35,Premium
+1028,Household_Paper Products_1028,Household,Paper Products,41.78,31.85,Budget
+1029,Grocery_Canned Goods_1029,Grocery,Canned Goods,27.9,19.78,Premium
+1030,Dairy_Cream_1030,Dairy,Cream,22.04,17.11,Premium
+1031,Snacks_Chips_1031,Snacks,Chips,15.27,10.28,BlueMart
+1032,Snacks_Chocolates_1032,Snacks,Chocolates,15.16,11.25,BlueMart
+1033,Household_Paper Products_1033,Household,Paper Products,32.44,20.11,International
+1034,Household_Cleaning Supplies_1034,Household,Cleaning Supplies,57.56,36.42,Budget
+1035,Electronics_Batteries_1035,Electronics,Batteries,245.38,139.58,Premium
+1036,Electronics_Mobile Accessories_1036,Electronics,Mobile Accessories,89.48,53.01,Budget
+1037,Electronics_Cables_1037,Electronics,Cables,178.57,123.66,BlueMart
+1038,Electronics_Cables_1038,Electronics,Cables,99.28,60.91,Premium
+1039,Beverages_Soft Drinks_1039,Beverages,Soft Drinks,25.91,15.14,Local
+1040,Electronics_Mobile Accessories_1040,Electronics,Mobile Accessories,84.68,55.46,Premium
+1041,Snacks_Nuts_1041,Snacks,Nuts,13.76,9.29,Local
+1042,Grocery_Canned Goods_1042,Grocery,Canned Goods,44.9,25.0,Budget
+1043,Electronics_Batteries_1043,Electronics,Batteries,23.45,15.63,Budget
+1044,Snacks_Biscuits_1044,Snacks,Biscuits,21.79,13.35,BlueMart
+1045,Electronics_Cables_1045,Electronics,Cables,141.21,89.2,Local
+1046,Household_Paper Products_1046,Household,Paper Products,58.19,38.66,Local
+1047,Household_Detergent_1047,Household,Detergent,36.11,25.61,Local
+1048,Snacks_Biscuits_1048,Snacks,Biscuits,13.87,8.75,Local
+1049,Electronics_Batteries_1049,Electronics,Batteries,118.16,67.31,BlueMart
+1050,Snacks_Chips_1050,Snacks,Chips,17.84,10.07,International
+1051,Electronics_Cables_1051,Electronics,Cables,71.35,40.92,BlueMart
+1052,Snacks_Crackers_1052,Snacks,Crackers,16.68,11.33,Budget
+1053,Snacks_Crackers_1053,Snacks,Crackers,11.65,7.13,Premium
+1054,Snacks_Chips_1054,Snacks,Chips,9.86,5.65,BlueMart
+1055,Dairy_Butter_1055,Dairy,Butter,11.14,6.17,Local
+1056,Snacks_Nuts_1056,Snacks,Nuts,5.98,3.94,Premium
+1057,Beverages_Tea_1057,Beverages,Tea,26.94,16.57,BlueMart
+1058,Personal Care_Soap_1058,Personal Care,Soap,45.07,30.87,Budget
+1059,Electronics_Cables_1059,Electronics,Cables,21.23,14.79,International
+1060,Household_Detergent_1060,Household,Detergent,37.82,22.02,Local
+1061,Personal Care_Skincare_1061,Personal Care,Skincare,53.82,40.64,Budget
+1062,Personal Care_Deodorant_1062,Personal Care,Deodorant,29.18,17.61,Premium
+1063,Snacks_Chocolates_1063,Snacks,Chocolates,16.22,10.29,Budget
+1064,Snacks_Biscuits_1064,Snacks,Biscuits,17.68,11.23,Premium
+1065,Electronics_Chargers_1065,Electronics,Chargers,177.83,113.29,International
+1066,Household_Cleaning Supplies_1066,Household,Cleaning Supplies,49.78,30.89,BlueMart
+1067,Grocery_Cereals_1067,Grocery,Cereals,49.57,32.38,Premium
+1068,Electronics_Chargers_1068,Electronics,Chargers,95.09,74.43,International
+1069,Grocery_Spices_1069,Grocery,Spices,38.3,23.35,Premium
+1070,Grocery_Canned Goods_1070,Grocery,Canned Goods,42.19,26.58,International
+1071,Grocery_Canned Goods_1071,Grocery,Canned Goods,5.49,4.26,BlueMart
+1072,Electronics_Chargers_1072,Electronics,Chargers,238.26,187.67,Budget
+1073,Electronics_Chargers_1073,Electronics,Chargers,120.38,75.03,Premium
+1074,Personal Care_Skincare_1074,Personal Care,Skincare,62.67,46.87,Local
+1075,Snacks_Crackers_1075,Snacks,Crackers,13.37,7.55,Budget
+1076,Snacks_Chocolates_1076,Snacks,Chocolates,22.42,14.3,BlueMart
+1077,Household_Cleaning Supplies_1077,Household,Cleaning Supplies,47.6,33.54,BlueMart
+1078,Electronics_Cables_1078,Electronics,Cables,179.73,102.12,Local
+1079,Beverages_Juices_1079,Beverages,Juices,5.2,2.97,International
+1080,Snacks_Chips_1080,Snacks,Chips,22.25,13.55,International
+1081,Snacks_Nuts_1081,Snacks,Nuts,10.06,7.31,Premium
+1082,Household_Detergent_1082,Household,Detergent,44.66,27.34,Premium
+1083,Dairy_Cheese_1083,Dairy,Cheese,13.88,9.04,Budget
+1084,Household_Paper Products_1084,Household,Paper Products,47.89,36.19,Local
+1085,Personal Care_Skincare_1085,Personal Care,Skincare,26.63,17.31,Premium
+1086,Grocery_Rice_1086,Grocery,Rice,15.06,11.91,BlueMart
+1087,Snacks_Crackers_1087,Snacks,Crackers,9.42,5.28,International
+1088,Household_Cleaning Supplies_1088,Household,Cleaning Supplies,21.16,15.32,BlueMart
+1089,Electronics_Mobile Accessories_1089,Electronics,Mobile Accessories,65.95,41.13,International
+1090,Dairy_Cheese_1090,Dairy,Cheese,36.54,20.51,Premium
+1091,Dairy_Butter_1091,Dairy,Butter,8.74,5.54,BlueMart
+1092,Household_Detergent_1092,Household,Detergent,28.19,17.12,Premium
+1093,Snacks_Chips_1093,Snacks,Chips,7.98,5.29,BlueMart
+1094,Grocery_Rice_1094,Grocery,Rice,23.5,16.47,Premium
+1095,Snacks_Chocolates_1095,Snacks,Chocolates,20.92,16.47,Local
+1096,Electronics_Mobile Accessories_1096,Electronics,Mobile Accessories,113.29,88.73,International
+1097,Snacks_Crackers_1097,Snacks,Crackers,2.61,1.68,Local
+1098,Electronics_Mobile Accessories_1098,Electronics,Mobile Accessories,103.53,76.34,Premium
+1099,Personal Care_Toothpaste_1099,Personal Care,Toothpaste,49.84,28.2,BlueMart
+1100,Electronics_Mobile Accessories_1100,Electronics,Mobile Accessories,18.21,10.36,Budget
+1101,Snacks_Crackers_1101,Snacks,Crackers,24.92,17.17,Local
+1102,Snacks_Biscuits_1102,Snacks,Biscuits,21.54,13.18,Premium
+1103,Dairy_Milk_1103,Dairy,Milk,38.39,26.93,Premium
+1104,Grocery_Pasta_1104,Grocery,Pasta,21.12,12.22,Budget
+1105,Beverages_Water_1105,Beverages,Water,17.04,13.0,Budget
+1106,Snacks_Chocolates_1106,Snacks,Chocolates,11.28,6.58,BlueMart
+1107,Electronics_Mobile Accessories_1107,Electronics,Mobile Accessories,160.77,116.72,Premium
+1108,Dairy_Butter_1108,Dairy,Butter,39.32,27.6,Budget
+1109,Electronics_Batteries_1109,Electronics,Batteries,36.39,26.62,Budget
+1110,Grocery_Canned Goods_1110,Grocery,Canned Goods,18.41,12.54,Budget
+1111,Snacks_Nuts_1111,Snacks,Nuts,12.56,9.55,Local
+1112,Household_Paper Products_1112,Household,Paper Products,10.38,7.32,Premium
+1113,Dairy_Cheese_1113,Dairy,Cheese,25.29,16.07,Budget
+1114,Electronics_Batteries_1114,Electronics,Batteries,152.42,99.08,Budget
+1115,Household_Paper Products_1115,Household,Paper Products,44.22,28.87,International
+1116,Personal Care_Skincare_1116,Personal Care,Skincare,78.12,54.72,Premium
+1117,Snacks_Crackers_1117,Snacks,Crackers,9.94,6.33,BlueMart
+1118,Dairy_Milk_1118,Dairy,Milk,23.7,15.14,International
+1119,Grocery_Pasta_1119,Grocery,Pasta,36.07,20.19,Local
+1120,Grocery_Cereals_1120,Grocery,Cereals,46.44,26.25,Premium
+1121,Grocery_Rice_1121,Grocery,Rice,31.88,25.39,Budget
+1122,Dairy_Yogurt_1122,Dairy,Yogurt,31.6,21.58,Local
+1123,Beverages_Water_1123,Beverages,Water,9.82,7.15,International
+1124,Dairy_Cheese_1124,Dairy,Cheese,23.62,13.62,Premium
+1125,Personal Care_Toothpaste_1125,Personal Care,Toothpaste,26.97,16.65,Premium
+1126,Beverages_Soft Drinks_1126,Beverages,Soft Drinks,25.7,14.71,Budget
+1127,Grocery_Rice_1127,Grocery,Rice,20.43,13.66,Premium
+1128,Grocery_Spices_1128,Grocery,Spices,26.58,18.5,Local
+1129,Electronics_Chargers_1129,Electronics,Chargers,152.84,105.63,Premium
+1130,Snacks_Nuts_1130,Snacks,Nuts,16.86,11.68,Premium
+1131,Snacks_Crackers_1131,Snacks,Crackers,23.47,12.95,Premium
+1132,Dairy_Butter_1132,Dairy,Butter,34.78,19.89,Local
+1133,Electronics_Mobile Accessories_1133,Electronics,Mobile Accessories,33.85,23.06,Premium
+1134,Household_Paper Products_1134,Household,Paper Products,13.83,8.98,International
+1135,Household_Trash Bags_1135,Household,Trash Bags,50.49,31.02,BlueMart
+1136,Personal Care_Shampoo_1136,Personal Care,Shampoo,60.29,41.22,Premium
+1137,Snacks_Nuts_1137,Snacks,Nuts,6.72,5.32,Local
+1138,Household_Cleaning Supplies_1138,Household,Cleaning Supplies,46.28,31.58,Local
+1139,Dairy_Cream_1139,Dairy,Cream,22.71,17.78,Premium
+1140,Personal Care_Shampoo_1140,Personal Care,Shampoo,35.85,23.79,Budget
+1141,Beverages_Coffee_1141,Beverages,Coffee,8.45,6.09,BlueMart
+1142,Electronics_Mobile Accessories_1142,Electronics,Mobile Accessories,15.64,9.06,Premium
+1143,Dairy_Cheese_1143,Dairy,Cheese,17.21,13.46,Local
+1144,Household_Detergent_1144,Household,Detergent,14.46,10.6,International
+1145,Household_Trash Bags_1145,Household,Trash Bags,11.46,8.43,Budget
+1146,Snacks_Chocolates_1146,Snacks,Chocolates,20.29,12.18,BlueMart
+1147,Snacks_Crackers_1147,Snacks,Crackers,20.74,14.86,Budget
+1148,Household_Cleaning Supplies_1148,Household,Cleaning Supplies,53.61,34.75,Local
+1149,Electronics_Chargers_1149,Electronics,Chargers,103.58,68.95,Premium
+1150,Electronics_Batteries_1150,Electronics,Batteries,133.14,80.96,International
+1151,Electronics_Cables_1151,Electronics,Cables,142.73,110.85,Budget
+1152,Personal Care_Toothpaste_1152,Personal Care,Toothpaste,53.94,34.18,BlueMart
+1153,Electronics_Batteries_1153,Electronics,Batteries,160.72,109.83,International
+1154,Household_Cleaning Supplies_1154,Household,Cleaning Supplies,15.89,9.98,Premium
+1155,Electronics_Mobile Accessories_1155,Electronics,Mobile Accessories,22.88,15.84,Local
+1156,Personal Care_Soap_1156,Personal Care,Soap,33.95,25.64,BlueMart
+1157,Household_Cleaning Supplies_1157,Household,Cleaning Supplies,14.63,9.5,Local
+1158,Snacks_Crackers_1158,Snacks,Crackers,7.27,5.31,Local
+1159,Electronics_Batteries_1159,Electronics,Batteries,178.08,122.11,Premium
+1160,Snacks_Nuts_1160,Snacks,Nuts,6.18,4.8,Budget
+1161,Electronics_Batteries_1161,Electronics,Batteries,82.66,58.17,International
+1162,Dairy_Yogurt_1162,Dairy,Yogurt,26.4,14.64,International
+1163,Household_Paper Products_1163,Household,Paper Products,37.39,27.08,International
+1164,Electronics_Cables_1164,Electronics,Cables,196.24,126.3,BlueMart
+1165,Personal Care_Skincare_1165,Personal Care,Skincare,17.3,13.15,International
+1166,Grocery_Spices_1166,Grocery,Spices,49.32,37.47,BlueMart
+1167,Grocery_Rice_1167,Grocery,Rice,44.15,30.01,Budget
+1168,Snacks_Chips_1168,Snacks,Chips,19.12,11.5,Local
+1169,Beverages_Soft Drinks_1169,Beverages,Soft Drinks,6.09,3.98,International
+1170,Dairy_Yogurt_1170,Dairy,Yogurt,21.3,14.28,International
+1171,Personal Care_Toothpaste_1171,Personal Care,Toothpaste,41.67,24.39,BlueMart
+1172,Electronics_Chargers_1172,Electronics,Chargers,113.45,88.34,Premium
+1173,Electronics_Batteries_1173,Electronics,Batteries,163.58,90.5,Budget
+1174,Electronics_Mobile Accessories_1174,Electronics,Mobile Accessories,240.85,141.42,Premium
+1175,Household_Trash Bags_1175,Household,Trash Bags,59.84,40.42,Budget
+1176,Snacks_Chocolates_1176,Snacks,Chocolates,6.83,5.29,Premium
+1177,Snacks_Chips_1177,Snacks,Chips,2.84,1.9,Budget
+1178,Beverages_Soft Drinks_1178,Beverages,Soft Drinks,23.94,15.88,Budget
+1179,Household_Cleaning Supplies_1179,Household,Cleaning Supplies,28.84,19.9,BlueMart
+1180,Grocery_Spices_1180,Grocery,Spices,8.4,6.2,Premium
+1181,Personal Care_Soap_1181,Personal Care,Soap,38.61,21.48,BlueMart
+1182,Beverages_Tea_1182,Beverages,Tea,14.02,9.64,Premium
+1183,Electronics_Batteries_1183,Electronics,Batteries,133.79,93.49,Premium
+1184,Snacks_Chocolates_1184,Snacks,Chocolates,22.41,15.44,Local
+1185,Personal Care_Toothpaste_1185,Personal Care,Toothpaste,77.39,60.84,BlueMart
+1186,Dairy_Yogurt_1186,Dairy,Yogurt,5.46,3.12,Premium
+1187,Personal Care_Skincare_1187,Personal Care,Skincare,71.35,50.71,Local
+1188,Grocery_Spices_1188,Grocery,Spices,20.38,12.53,Premium
+1189,Electronics_Batteries_1189,Electronics,Batteries,77.99,55.06,Premium
+1190,Dairy_Milk_1190,Dairy,Milk,20.26,12.63,International
+1191,Dairy_Butter_1191,Dairy,Butter,9.9,7.59,Premium
+1192,Dairy_Milk_1192,Dairy,Milk,21.97,14.9,Local
+1193,Beverages_Tea_1193,Beverages,Tea,13.87,8.38,Budget
+1194,Dairy_Butter_1194,Dairy,Butter,9.63,7.46,Budget
+1195,Snacks_Chocolates_1195,Snacks,Chocolates,20.92,14.28,Local
+1196,Grocery_Pasta_1196,Grocery,Pasta,29.94,21.34,Local
+1197,Electronics_Mobile Accessories_1197,Electronics,Mobile Accessories,17.58,10.27,International
+1198,Dairy_Cheese_1198,Dairy,Cheese,25.91,18.14,Budget
+1199,Electronics_Cables_1199,Electronics,Cables,229.89,150.51,Premium
+1200,Beverages_Juices_1200,Beverages,Juices,7.49,5.5,BlueMart

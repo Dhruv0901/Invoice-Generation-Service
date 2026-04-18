@@ -1,0 +1,1082 @@
+[
+  {
+    "request_id": "kaggle_fcst_001",
+    "target_month": "2025-11-01",
+    "product_id": "1098",
+    "product_context": {
+      "product_name": "Electronics_Mobile Accessories_1098",
+      "category": "Electronics",
+      "base_price": 99.77,
+      "trend_strength": -0.0022,
+      "seasonality_strength": 0.247
+    },
+    "history": {
+      "monthly_sales_lag_1": 96,
+      "monthly_sales_lag_2": 79,
+      "monthly_sales_lag_3": 123,
+      "monthly_sales_lag_4": 160,
+      "monthly_sales_lag_5": 188,
+      "monthly_sales_lag_6": 136
+    },
+    "current_context": {
+      "average_price": 103.53,
+      "inventory_units": 7901,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 27
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_002",
+    "target_month": "2025-11-01",
+    "product_id": "1024",
+    "product_context": {
+      "product_name": "Grocery_Canned Goods_1024",
+      "category": "Grocery",
+      "base_price": 8.41,
+      "trend_strength": -0.0016,
+      "seasonality_strength": 0.262
+    },
+    "history": {
+      "monthly_sales_lag_1": 86,
+      "monthly_sales_lag_2": 89,
+      "monthly_sales_lag_3": 173,
+      "monthly_sales_lag_4": 123,
+      "monthly_sales_lag_5": 155,
+      "monthly_sales_lag_6": 119
+    },
+    "current_context": {
+      "average_price": 8.79,
+      "inventory_units": 15598,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 25
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_003",
+    "target_month": "2025-11-01",
+    "product_id": "1157",
+    "product_context": {
+      "product_name": "Household_Cleaning Supplies_1157",
+      "category": "Household",
+      "base_price": 14.11,
+      "trend_strength": -0.0005,
+      "seasonality_strength": 0.26
+    },
+    "history": {
+      "monthly_sales_lag_1": 90,
+      "monthly_sales_lag_2": 92,
+      "monthly_sales_lag_3": 235,
+      "monthly_sales_lag_4": 189,
+      "monthly_sales_lag_5": 122,
+      "monthly_sales_lag_6": 108
+    },
+    "current_context": {
+      "average_price": 14.63,
+      "inventory_units": 9851,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 22
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_004",
+    "target_month": "2025-11-01",
+    "product_id": "1104",
+    "product_context": {
+      "product_name": "Grocery_Pasta_1104",
+      "category": "Grocery",
+      "base_price": 20.43,
+      "trend_strength": -0.0035,
+      "seasonality_strength": 0.276
+    },
+    "history": {
+      "monthly_sales_lag_1": 78,
+      "monthly_sales_lag_2": 83,
+      "monthly_sales_lag_3": 198,
+      "monthly_sales_lag_4": 155,
+      "monthly_sales_lag_5": 121,
+      "monthly_sales_lag_6": 127
+    },
+    "current_context": {
+      "average_price": 21.12,
+      "inventory_units": 17759,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 21
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_005",
+    "target_month": "2025-11-01",
+    "product_id": "1102",
+    "product_context": {
+      "product_name": "Snacks_Biscuits_1102",
+      "category": "Snacks",
+      "base_price": 20.58,
+      "trend_strength": -0.0009,
+      "seasonality_strength": 0.281
+    },
+    "history": {
+      "monthly_sales_lag_1": 73,
+      "monthly_sales_lag_2": 107,
+      "monthly_sales_lag_3": 167,
+      "monthly_sales_lag_4": 195,
+      "monthly_sales_lag_5": 150,
+      "monthly_sales_lag_6": 131
+    },
+    "current_context": {
+      "average_price": 21.54,
+      "inventory_units": 13723,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 19
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_006",
+    "target_month": "2025-11-01",
+    "product_id": "1044",
+    "product_context": {
+      "product_name": "Snacks_Biscuits_1044",
+      "category": "Snacks",
+      "base_price": 20.91,
+      "trend_strength": -0.0036,
+      "seasonality_strength": 0.261
+    },
+    "history": {
+      "monthly_sales_lag_1": 68,
+      "monthly_sales_lag_2": 86,
+      "monthly_sales_lag_3": 156,
+      "monthly_sales_lag_4": 185,
+      "monthly_sales_lag_5": 128,
+      "monthly_sales_lag_6": 105
+    },
+    "current_context": {
+      "average_price": 21.79,
+      "inventory_units": 15033,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 22
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_007",
+    "target_month": "2025-11-01",
+    "product_id": "1087",
+    "product_context": {
+      "product_name": "Snacks_Crackers_1087",
+      "category": "Snacks",
+      "base_price": 9.01,
+      "trend_strength": -0.0017,
+      "seasonality_strength": 0.291
+    },
+    "history": {
+      "monthly_sales_lag_1": 105,
+      "monthly_sales_lag_2": 79,
+      "monthly_sales_lag_3": 193,
+      "monthly_sales_lag_4": 187,
+      "monthly_sales_lag_5": 103,
+      "monthly_sales_lag_6": 139
+    },
+    "current_context": {
+      "average_price": 9.42,
+      "inventory_units": 12845,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_008",
+    "target_month": "2025-11-01",
+    "product_id": "1188",
+    "product_context": {
+      "product_name": "Grocery_Spices_1188",
+      "category": "Grocery",
+      "base_price": 19.43,
+      "trend_strength": -0.001,
+      "seasonality_strength": 0.3
+    },
+    "history": {
+      "monthly_sales_lag_1": 71,
+      "monthly_sales_lag_2": 85,
+      "monthly_sales_lag_3": 178,
+      "monthly_sales_lag_4": 191,
+      "monthly_sales_lag_5": 130,
+      "monthly_sales_lag_6": 112
+    },
+    "current_context": {
+      "average_price": 20.38,
+      "inventory_units": 19395,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 20
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_009",
+    "target_month": "2025-11-01",
+    "product_id": "1093",
+    "product_context": {
+      "product_name": "Snacks_Chips_1093",
+      "category": "Snacks",
+      "base_price": 7.7,
+      "trend_strength": -0.0018,
+      "seasonality_strength": 0.277
+    },
+    "history": {
+      "monthly_sales_lag_1": 83,
+      "monthly_sales_lag_2": 66,
+      "monthly_sales_lag_3": 166,
+      "monthly_sales_lag_4": 154,
+      "monthly_sales_lag_5": 127,
+      "monthly_sales_lag_6": 153
+    },
+    "current_context": {
+      "average_price": 7.98,
+      "inventory_units": 14744,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 25
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_010",
+    "target_month": "2025-11-01",
+    "product_id": "1109",
+    "product_context": {
+      "product_name": "Electronics_Batteries_1109",
+      "category": "Electronics",
+      "base_price": 35.03,
+      "trend_strength": -0.004,
+      "seasonality_strength": 0.31
+    },
+    "history": {
+      "monthly_sales_lag_1": 86,
+      "monthly_sales_lag_2": 71,
+      "monthly_sales_lag_3": 182,
+      "monthly_sales_lag_4": 187,
+      "monthly_sales_lag_5": 156,
+      "monthly_sales_lag_6": 121
+    },
+    "current_context": {
+      "average_price": 36.39,
+      "inventory_units": 7810,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 21
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_011",
+    "target_month": "2025-11-01",
+    "product_id": "1147",
+    "product_context": {
+      "product_name": "Snacks_Crackers_1147",
+      "category": "Snacks",
+      "base_price": 20.16,
+      "trend_strength": -0.0021,
+      "seasonality_strength": 0.27
+    },
+    "history": {
+      "monthly_sales_lag_1": 60,
+      "monthly_sales_lag_2": 105,
+      "monthly_sales_lag_3": 194,
+      "monthly_sales_lag_4": 129,
+      "monthly_sales_lag_5": 104,
+      "monthly_sales_lag_6": 137
+    },
+    "current_context": {
+      "average_price": 20.74,
+      "inventory_units": 15309,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 17
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_012",
+    "target_month": "2025-11-01",
+    "product_id": "1015",
+    "product_context": {
+      "product_name": "Dairy_Cream_1015",
+      "category": "Dairy",
+      "base_price": 26.05,
+      "trend_strength": -0.0005,
+      "seasonality_strength": 0.26
+    },
+    "history": {
+      "monthly_sales_lag_1": 89,
+      "monthly_sales_lag_2": 62,
+      "monthly_sales_lag_3": 183,
+      "monthly_sales_lag_4": 166,
+      "monthly_sales_lag_5": 148,
+      "monthly_sales_lag_6": 127
+    },
+    "current_context": {
+      "average_price": 27.13,
+      "inventory_units": 12026,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 24
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_013",
+    "target_month": "2025-11-01",
+    "product_id": "1049",
+    "product_context": {
+      "product_name": "Electronics_Batteries_1049",
+      "category": "Electronics",
+      "base_price": 113.6,
+      "trend_strength": -0.0044,
+      "seasonality_strength": 0.297
+    },
+    "history": {
+      "monthly_sales_lag_1": 71,
+      "monthly_sales_lag_2": 67,
+      "monthly_sales_lag_3": 162,
+      "monthly_sales_lag_4": 189,
+      "monthly_sales_lag_5": 148,
+      "monthly_sales_lag_6": 126
+    },
+    "current_context": {
+      "average_price": 118.16,
+      "inventory_units": 8658,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 20
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_014",
+    "target_month": "2025-11-01",
+    "product_id": "1011",
+    "product_context": {
+      "product_name": "Personal Care_Shampoo_1011",
+      "category": "Personal Care",
+      "base_price": 19.7,
+      "trend_strength": -0.0011,
+      "seasonality_strength": 0.289
+    },
+    "history": {
+      "monthly_sales_lag_1": 86,
+      "monthly_sales_lag_2": 92,
+      "monthly_sales_lag_3": 202,
+      "monthly_sales_lag_4": 151,
+      "monthly_sales_lag_5": 141,
+      "monthly_sales_lag_6": 127
+    },
+    "current_context": {
+      "average_price": 20.37,
+      "inventory_units": 12021,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 22
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_015",
+    "target_month": "2025-11-01",
+    "product_id": "1025",
+    "product_context": {
+      "product_name": "Household_Detergent_1025",
+      "category": "Household",
+      "base_price": 8.13,
+      "trend_strength": -0.0022,
+      "seasonality_strength": 0.313
+    },
+    "history": {
+      "monthly_sales_lag_1": 86,
+      "monthly_sales_lag_2": 99,
+      "monthly_sales_lag_3": 140,
+      "monthly_sales_lag_4": 159,
+      "monthly_sales_lag_5": 145,
+      "monthly_sales_lag_6": 123
+    },
+    "current_context": {
+      "average_price": 8.48,
+      "inventory_units": 9083,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_016",
+    "target_month": "2025-11-01",
+    "product_id": "1078",
+    "product_context": {
+      "product_name": "Electronics_Cables_1078",
+      "category": "Electronics",
+      "base_price": 173.93,
+      "trend_strength": -0.0027,
+      "seasonality_strength": 0.295
+    },
+    "history": {
+      "monthly_sales_lag_1": 83,
+      "monthly_sales_lag_2": 109,
+      "monthly_sales_lag_3": 152,
+      "monthly_sales_lag_4": 150,
+      "monthly_sales_lag_5": 158,
+      "monthly_sales_lag_6": 130
+    },
+    "current_context": {
+      "average_price": 179.73,
+      "inventory_units": 8384,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_017",
+    "target_month": "2025-11-01",
+    "product_id": "1137",
+    "product_context": {
+      "product_name": "Snacks_Nuts_1137",
+      "category": "Snacks",
+      "base_price": 6.51,
+      "trend_strength": -0.0016,
+      "seasonality_strength": 0.27
+    },
+    "history": {
+      "monthly_sales_lag_1": 66,
+      "monthly_sales_lag_2": 73,
+      "monthly_sales_lag_3": 169,
+      "monthly_sales_lag_4": 130,
+      "monthly_sales_lag_5": 131,
+      "monthly_sales_lag_6": 154
+    },
+    "current_context": {
+      "average_price": 6.72,
+      "inventory_units": 13800,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 20
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_018",
+    "target_month": "2025-11-01",
+    "product_id": "1094",
+    "product_context": {
+      "product_name": "Grocery_Rice_1094",
+      "category": "Grocery",
+      "base_price": 22.83,
+      "trend_strength": -0.0008,
+      "seasonality_strength": 0.272
+    },
+    "history": {
+      "monthly_sales_lag_1": 93,
+      "monthly_sales_lag_2": 87,
+      "monthly_sales_lag_3": 151,
+      "monthly_sales_lag_4": 219,
+      "monthly_sales_lag_5": 144,
+      "monthly_sales_lag_6": 116
+    },
+    "current_context": {
+      "average_price": 23.5,
+      "inventory_units": 17719,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 24
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_019",
+    "target_month": "2025-11-01",
+    "product_id": "1077",
+    "product_context": {
+      "product_name": "Household_Cleaning Supplies_1077",
+      "category": "Household",
+      "base_price": 46.21,
+      "trend_strength": -0.0035,
+      "seasonality_strength": 0.318
+    },
+    "history": {
+      "monthly_sales_lag_1": 108,
+      "monthly_sales_lag_2": 51,
+      "monthly_sales_lag_3": 114,
+      "monthly_sales_lag_4": 158,
+      "monthly_sales_lag_5": 112,
+      "monthly_sales_lag_6": 183
+    },
+    "current_context": {
+      "average_price": 47.6,
+      "inventory_units": 10138,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 26
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_020",
+    "target_month": "2025-11-01",
+    "product_id": "1176",
+    "product_context": {
+      "product_name": "Snacks_Chocolates_1176",
+      "category": "Snacks",
+      "base_price": 6.58,
+      "trend_strength": -0.0012,
+      "seasonality_strength": 0.278
+    },
+    "history": {
+      "monthly_sales_lag_1": 95,
+      "monthly_sales_lag_2": 81,
+      "monthly_sales_lag_3": 198,
+      "monthly_sales_lag_4": 159,
+      "monthly_sales_lag_5": 108,
+      "monthly_sales_lag_6": 147
+    },
+    "current_context": {
+      "average_price": 6.83,
+      "inventory_units": 12667,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 26
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_021",
+    "target_month": "2025-11-01",
+    "product_id": "1039",
+    "product_context": {
+      "product_name": "Beverages_Soft Drinks_1039",
+      "category": "Beverages",
+      "base_price": 24.82,
+      "trend_strength": -0.0017,
+      "seasonality_strength": 0.298
+    },
+    "history": {
+      "monthly_sales_lag_1": 112,
+      "monthly_sales_lag_2": 79,
+      "monthly_sales_lag_3": 155,
+      "monthly_sales_lag_4": 213,
+      "monthly_sales_lag_5": 147,
+      "monthly_sales_lag_6": 119
+    },
+    "current_context": {
+      "average_price": 25.91,
+      "inventory_units": 13938,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 21
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_022",
+    "target_month": "2025-11-01",
+    "product_id": "1168",
+    "product_context": {
+      "product_name": "Snacks_Chips_1168",
+      "category": "Snacks",
+      "base_price": 18.53,
+      "trend_strength": -0.0035,
+      "seasonality_strength": 0.29
+    },
+    "history": {
+      "monthly_sales_lag_1": 81,
+      "monthly_sales_lag_2": 90,
+      "monthly_sales_lag_3": 173,
+      "monthly_sales_lag_4": 189,
+      "monthly_sales_lag_5": 106,
+      "monthly_sales_lag_6": 151
+    },
+    "current_context": {
+      "average_price": 19.12,
+      "inventory_units": 13781,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_023",
+    "target_month": "2025-11-01",
+    "product_id": "1036",
+    "product_context": {
+      "product_name": "Electronics_Mobile Accessories_1036",
+      "category": "Electronics",
+      "base_price": 85.5,
+      "trend_strength": -0.003,
+      "seasonality_strength": 0.283
+    },
+    "history": {
+      "monthly_sales_lag_1": 57,
+      "monthly_sales_lag_2": 90,
+      "monthly_sales_lag_3": 190,
+      "monthly_sales_lag_4": 169,
+      "monthly_sales_lag_5": 92,
+      "monthly_sales_lag_6": 107
+    },
+    "current_context": {
+      "average_price": 89.48,
+      "inventory_units": 7626,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 19
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_024",
+    "target_month": "2025-11-01",
+    "product_id": "1169",
+    "product_context": {
+      "product_name": "Beverages_Soft Drinks_1169",
+      "category": "Beverages",
+      "base_price": 5.92,
+      "trend_strength": -0.0022,
+      "seasonality_strength": 0.262
+    },
+    "history": {
+      "monthly_sales_lag_1": 81,
+      "monthly_sales_lag_2": 75,
+      "monthly_sales_lag_3": 161,
+      "monthly_sales_lag_4": 172,
+      "monthly_sales_lag_5": 153,
+      "monthly_sales_lag_6": 129
+    },
+    "current_context": {
+      "average_price": 6.09,
+      "inventory_units": 12660,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_025",
+    "target_month": "2025-11-01",
+    "product_id": "1175",
+    "product_context": {
+      "product_name": "Household_Trash Bags_1175",
+      "category": "Household",
+      "base_price": 57.53,
+      "trend_strength": -0.0006,
+      "seasonality_strength": 0.269
+    },
+    "history": {
+      "monthly_sales_lag_1": 96,
+      "monthly_sales_lag_2": 87,
+      "monthly_sales_lag_3": 220,
+      "monthly_sales_lag_4": 151,
+      "monthly_sales_lag_5": 176,
+      "monthly_sales_lag_6": 116
+    },
+    "current_context": {
+      "average_price": 59.84,
+      "inventory_units": 9076,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_026",
+    "target_month": "2025-11-01",
+    "product_id": "1195",
+    "product_context": {
+      "product_name": "Snacks_Chocolates_1195",
+      "category": "Snacks",
+      "base_price": 20.13,
+      "trend_strength": -0.0006,
+      "seasonality_strength": 0.265
+    },
+    "history": {
+      "monthly_sales_lag_1": 81,
+      "monthly_sales_lag_2": 73,
+      "monthly_sales_lag_3": 195,
+      "monthly_sales_lag_4": 212,
+      "monthly_sales_lag_5": 146,
+      "monthly_sales_lag_6": 142
+    },
+    "current_context": {
+      "average_price": 20.92,
+      "inventory_units": 14138,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 22
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_027",
+    "target_month": "2025-11-01",
+    "product_id": "1143",
+    "product_context": {
+      "product_name": "Dairy_Cheese_1143",
+      "category": "Dairy",
+      "base_price": 16.53,
+      "trend_strength": -0.0014,
+      "seasonality_strength": 0.308
+    },
+    "history": {
+      "monthly_sales_lag_1": 84,
+      "monthly_sales_lag_2": 92,
+      "monthly_sales_lag_3": 234,
+      "monthly_sales_lag_4": 144,
+      "monthly_sales_lag_5": 160,
+      "monthly_sales_lag_6": 133
+    },
+    "current_context": {
+      "average_price": 17.21,
+      "inventory_units": 12068,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_028",
+    "target_month": "2025-11-01",
+    "product_id": "1193",
+    "product_context": {
+      "product_name": "Beverages_Tea_1193",
+      "category": "Beverages",
+      "base_price": 13.32,
+      "trend_strength": -0.002,
+      "seasonality_strength": 0.288
+    },
+    "history": {
+      "monthly_sales_lag_1": 91,
+      "monthly_sales_lag_2": 55,
+      "monthly_sales_lag_3": 185,
+      "monthly_sales_lag_4": 187,
+      "monthly_sales_lag_5": 151,
+      "monthly_sales_lag_6": 124
+    },
+    "current_context": {
+      "average_price": 13.87,
+      "inventory_units": 14627,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 25
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_029",
+    "target_month": "2025-11-01",
+    "product_id": "1065",
+    "product_context": {
+      "product_name": "Electronics_Chargers_1065",
+      "category": "Electronics",
+      "base_price": 169.17,
+      "trend_strength": -0.0025,
+      "seasonality_strength": 0.272
+    },
+    "history": {
+      "monthly_sales_lag_1": 72,
+      "monthly_sales_lag_2": 86,
+      "monthly_sales_lag_3": 169,
+      "monthly_sales_lag_4": 176,
+      "monthly_sales_lag_5": 165,
+      "monthly_sales_lag_6": 135
+    },
+    "current_context": {
+      "average_price": 177.83,
+      "inventory_units": 7718,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 23
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  },
+  {
+    "request_id": "kaggle_fcst_030",
+    "target_month": "2025-11-01",
+    "product_id": "1041",
+    "product_context": {
+      "product_name": "Snacks_Nuts_1041",
+      "category": "Snacks",
+      "base_price": 13.3,
+      "trend_strength": -0.0015,
+      "seasonality_strength": 0.26
+    },
+    "history": {
+      "monthly_sales_lag_1": 98,
+      "monthly_sales_lag_2": 100,
+      "monthly_sales_lag_3": 182,
+      "monthly_sales_lag_4": 176,
+      "monthly_sales_lag_5": 110,
+      "monthly_sales_lag_6": 130
+    },
+    "current_context": {
+      "average_price": 13.76,
+      "inventory_units": 13315,
+      "promo_intensity": 0.0,
+      "supplier_delay_flag": 0,
+      "promo_day_count": 0.0,
+      "promo_event_count": 0.0,
+      "active_days": 22
+    },
+    "tax_rate": 0.1,
+    "provenance": {
+      "dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+      "sampling": "random_eligible_products",
+      "sample_size": 30,
+      "random_seed": 42
+    }
+  }
+]

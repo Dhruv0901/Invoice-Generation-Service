@@ -5,13 +5,23 @@ from typing import Any
 
 from mcp_server.services.audit import record_audit
 from mcp_server.services.feature_builder import build_features
-from mcp_server.services.model_loader import load_model_bundle
+from mcp_server.services.model_loader import HeuristicForecastModel, load_model_bundle
 
 
 def forecast_sales(request: dict[str, Any], base_dir: Path | None = None) -> dict[str, Any]:
     bundle = load_model_bundle(base_dir)
     features = build_features(request, bundle.manifest)
-    prediction = bundle.model.predict([features.ordered_values])[0]
+    heuristic_fallback_used = bundle.heuristic_fallback
+    fallback_reason: str | None = None
+    try:
+        prediction = bundle.model.predict([features.ordered_values])[0]
+    except ValueError as error:
+        if "features" not in str(error).lower():
+            raise
+        prediction = HeuristicForecastModel().predict([features.ordered_values])[0]
+        heuristic_fallback_used = True
+        fallback_reason = str(error)
+
     result = {
         "request_id": request["request_id"],
         "target_month": request["target_month"],
@@ -22,7 +32,8 @@ def forecast_sales(request: dict[str, Any], base_dir: Path | None = None) -> dic
         "model_trace": {
             "model_type": bundle.manifest.get("model_type"),
             "model_training_timestamp": bundle.manifest.get("model_training_timestamp"),
-            "heuristic_model": bundle.heuristic_fallback,
+            "heuristic_model": heuristic_fallback_used,
+            "fallback_reason": fallback_reason,
         },
         "features": dict(zip(features.ordered_names, features.ordered_values)),
     }
@@ -36,4 +47,3 @@ def forecast_sales(request: dict[str, Any], base_dir: Path | None = None) -> dic
         base_dir=base_dir,
     )
     return result
-

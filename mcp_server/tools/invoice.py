@@ -9,7 +9,7 @@ from mcp_server.services.pricing import build_invoice_pricing
 from mcp_server.services.qwen_invoice_renderer import render_invoice_docx
 from mcp_server.services.storage import invoice_output_path, metadata_output_path, write_metadata
 from mcp_server.tools.forecast import forecast_sales
-from scripts.generate_next_month_forecast import build_invoice_requests, load_params
+from scripts.generate_next_month_forecast import build_invoice_requests, default_params
 
 
 def _invoice_number(request_id: str) -> str:
@@ -75,8 +75,7 @@ def forecast_and_generate_invoice(request: dict[str, Any], base_dir: Path | None
 def generate_invoices_from_kaggle_sample(request: dict[str, Any] | None = None, base_dir: Path | None = None) -> dict[str, Any]:
     resolved_base_dir = base_dir or Path.cwd()
     payload = request or {}
-    forecast_core_root = resolved_base_dir / "forecast_core"
-    params = load_params(forecast_core_root / "params.yaml")
+    params = default_params(payload.get("source_extract_dir"))
 
     dataset_cfg = params.setdefault("dataset", {})
     dataset_cfg["kaggle_dataset"] = payload.get(
@@ -85,7 +84,7 @@ def generate_invoices_from_kaggle_sample(request: dict[str, Any] | None = None, 
     )
     dataset_cfg["source_extract_dir"] = payload.get(
         "source_extract_dir",
-        str(forecast_core_root / "data" / "raw" / "kaggle-synthetic-retail"),
+        dataset_cfg["source_extract_dir"],
     )
 
     requests, next_month = build_invoice_requests(
