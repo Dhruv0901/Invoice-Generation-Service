@@ -4,7 +4,6 @@ import json
 import os
 import shutil
 import unittest
-from types import SimpleNamespace
 from pathlib import Path
 from unittest.mock import patch
 
@@ -21,10 +20,9 @@ SAMPLE_PATH = ROOT / "mcp_server" / "resources" / "sample_payloads" / "forecast_
 
 class ServiceTests(unittest.TestCase):
     def setUp(self) -> None:
-        os.environ["MODEL_PATH"] = "tests/fixtures/missing-model.pkl"
+        os.environ["MODEL_PATH"] = "models/model.pkl"
         os.environ["FEATURE_MANIFEST_PATH"] = "models/feature_manifest.json"
         os.environ["METRICS_PATH"] = "reports/metrics.json"
-        os.environ["ALLOW_HEURISTIC_MODEL"] = "true"
         self.request = json.loads(SAMPLE_PATH.read_text(encoding="utf-8"))
         self.bundle = load_model_bundle(ROOT)
 
@@ -38,23 +36,10 @@ class ServiceTests(unittest.TestCase):
         self.assertGreaterEqual(result["predicted_monthly_sales"], 0.0)
         self.assertEqual(result["request_id"], "fcst_001")
 
-    @patch("mcp_server.tools.forecast.load_model_bundle")
-    def test_forecast_sales_falls_back_on_feature_mismatch(self, mock_load_bundle) -> None:
-        class FailingModel:
-            def predict(self, rows):
-                raise ValueError("X has 68 features, but StandardScaler is expecting 48 features as input.")
-
-        mock_load_bundle.return_value = SimpleNamespace(
-            model=FailingModel(),
-            manifest=self.bundle.manifest,
-            heuristic_fallback=False,
-        )
-
-        result = forecast_sales(self.request, base_dir=ROOT)
-
-        self.assertGreaterEqual(result["predicted_monthly_sales"], 0.0)
-        self.assertTrue(result["model_trace"]["heuristic_model"])
-        self.assertIn("68 features", result["model_trace"]["fallback_reason"])
+    def test_load_model_bundle_requires_model_artifact(self) -> None:
+        os.environ["MODEL_PATH"] = "tests/fixtures/missing-model.pkl"
+        with self.assertRaises(FileNotFoundError):
+            load_model_bundle(ROOT)
 
     @patch("mcp_server.services.qwen_invoice_renderer.urlopen")
     def test_invoice_generation_writes_docx_and_metadata(self, mock_urlopen) -> None:

@@ -1,8 +1,8 @@
 {
-  "dataset_version": "test",
+  "dataset_version": "kaggle-synthetic-retail",
   "source": "synthetic",
-  "kaggle_dataset": "synthetic",
-  "source_extract_dir": "D:\\Gen AI\\Invoice Generation Service\\tests\\_tmp_kaggle_source",
+  "kaggle_dataset": "amirkhanh/synthetic-retail-dataset-1-2m-transactions",
+  "source_extract_dir": "D:\\Gen AI\\Invoice Generation Service\\data\\raw\\kaggle-synthetic-retail",
   "product_limit": 150,
   "min_history_months": 6
 }

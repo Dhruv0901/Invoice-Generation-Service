@@ -16,5 +16,4 @@ def health_check(base_dir: Path | None = None) -> dict[str, bool | str]:
         "feature_manifest_loaded": bundle.feature_manifest_path.exists(),
         "qwen_configured": bool(qwen_config["base_url"]),
         "qwen_model": qwen_config["model"],
-        "heuristic_model": bundle.heuristic_fallback,
     }

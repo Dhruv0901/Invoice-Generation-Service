@@ -4,28 +4,8 @@ import json
 import os
 import pickle
 from dataclasses import dataclass
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-
-
-class HeuristicForecastModel:
-    """Fallback forecaster used when no trained model is available."""
-
-    def predict(self, rows: list[list[float]]) -> list[float]:
-        predictions: list[float] = []
-        for row in rows:
-            lag_window = row[:6] if len(row) >= 6 else row
-            if not lag_window:
-                predictions.append(0.0)
-                continue
-            baseline = sum(lag_window) / len(lag_window)
-            trend = 0.0
-            if len(lag_window) >= 2:
-                trend = lag_window[0] - lag_window[1]
-            prediction = max(0.0, baseline + (0.35 * trend))
-            predictions.append(round(prediction, 4))
-        return predictions
 
 
 @dataclass
@@ -36,11 +16,6 @@ class ModelBundle:
     model_path: Path
     feature_manifest_path: Path
     metrics_path: Path
-    heuristic_fallback: bool
-
-
-def _utc_now() -> str:
-    return datetime.now(timezone.utc).isoformat()
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -87,19 +62,11 @@ def load_model_bundle(base_dir: Path | None = None) -> ModelBundle:
     manifest = _load_json(manifest_path)
     metrics = _load_json(metrics_path) if metrics_path.exists() else {}
 
-    heuristic_allowed = os.getenv("ALLOW_HEURISTIC_MODEL", "true").lower() == "true"
-    heuristic_fallback = False
-
-    if model_path.exists():
-        with model_path.open("rb") as handle:
-            model = pickle.load(handle)
-    elif heuristic_allowed:
-        model = HeuristicForecastModel()
-        heuristic_fallback = True
-        manifest.setdefault("model_training_timestamp", _utc_now())
-        manifest.setdefault("model_type", "heuristic_fallback")
-    else:
+    if not model_path.exists():
         raise FileNotFoundError(f"Model artifact missing at {model_path}")
+
+    with model_path.open("rb") as handle:
+        model = pickle.load(handle)
 
     return ModelBundle(
         model=model,
@@ -108,5 +75,4 @@ def load_model_bundle(base_dir: Path | None = None) -> ModelBundle:
         model_path=model_path,
         feature_manifest_path=manifest_path,
         metrics_path=metrics_path,
-        heuristic_fallback=heuristic_fallback,
     )

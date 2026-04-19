@@ -15,6 +15,4 @@ def get_model_metadata(base_dir: Path | None = None) -> dict:
         "training_split_strategy": manifest.get("data_split_strategy", "unknown"),
         "holdout_months": manifest.get("holdout_months"),
         "metrics": bundle.metrics,
-        "heuristic_model": bundle.heuristic_fallback,
     }
-

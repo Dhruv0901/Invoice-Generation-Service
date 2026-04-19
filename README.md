@@ -134,7 +134,7 @@ This repo currently leans on local Qwen generation for invoice text.
 
 The strongest next steps are:
 
-- wire this repo back to a trained model bundle from `Future-Sales-Forecast` instead of relying on the current heuristic path
+- ~~keep the serving manifest and feature contract aligned with the trained `model.pkl` bundle from `Future-Sales-Forecast`~~
 - move from single-item invoices to company-level grouped invoices
 - attach real-world demand feeds instead of only sample or temporary payloads
 - expose this as an actual long-running server that accepts pushed requests instead of mainly local command execution
